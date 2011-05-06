@@ -59,7 +59,7 @@ module Kaminari
         class << subscriber
           alias_method :render_partial_with_logging, :render_partial
           # do nothing
-          def render_partial(event); end
+#          def render_partial(event); end
         end
 
         ret = super @window_options.merge(@options).merge :paginator => self
